@@ -13,3 +13,10 @@ def remove_first_last_lines(args):
 		return []
 	else:
 		return input_list[1:-1]
+
+def pop_first_last_lines(args):
+	input_list = args.split('\n')
+	if len(input_list) <= 2:
+		return []
+	else:
+		return input_list[1:-1]
