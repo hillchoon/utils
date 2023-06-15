@@ -27,7 +27,7 @@ def model(dev):
 # chassis role
 def role(dev):
     h = hw_dict(dev)['hostname'].lower()
-    r = 'edge' if h.find('edge') != -1 else 'core' if h.find('core') != -1 else 'ext' if h.find('ext') != -1 else None
+    r = 'edge' if h.find('edge') != -1 else 'core' if h.find('core') != -1 else 'ext' if h.find('ext') != -1 else 'mgmt' if h.find('mgmt') != -1 else 'dc'
     return r
 
 # campus info
